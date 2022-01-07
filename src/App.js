@@ -5,11 +5,19 @@ export default function App() {
     <div className="App">
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
-      <MyComp student = {Karin} 
-      
-      
-      />
-    </div> 
+      <MyComp student={BobTheBuilder} />
+      <MyComp student={Karin} />
+      <MyComp student={Ana} />
+      <MyComp student={Joe} />
+      <MyComp student={Jayden} />
+      <MyComp student={Uber} />
+      <MyComp student={Maya} />
+      <MyComp student={David} />
+      <MyComp student={Kevin} />
+      <MyComp student={Old} />
+      <MyComp student={Ca} />
+      <MyComp student={MikeWazowski} />
+    </div>
   );
 }
 
@@ -146,7 +154,7 @@ let MikeWazowski = {
 };
 
 function MyComp(props) {
-  console.log(props)
+  console.log(props);
   let name = props.student.name;
   let school = props.student.school;
   let year = props.student.year;
@@ -155,5 +163,11 @@ function MyComp(props) {
   let url = props.student.url;
   let socialMedia = props.student.socialMedia;
   let beachOrMountain = props.student.beachOrMountain;
-  return <div> {name}, {school}, {year}, {color},{music},{url},{socialMedia},{beachOrMountain}</div>
+  return (
+    <div>
+      {" "}
+      {name}, {school}, {year}, {color},{music},{url},{socialMedia},
+      {beachOrMountain}
+    </div>
+  );
 }
